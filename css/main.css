@@ -1,0 +1,796 @@
+@import url("font.css");
+@import url("common.css");
+
+/* hero */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 177.77777778vh;
+    min-width: 100%;
+    height: 56.25vw;
+    min-height: 100%;
+
+    transform: translate(-50%, -50%);
+    border: 0;
+    pointer-events: none;
+}
+
+/* menu */
+
+.menu-section {
+    padding: 120px 0;
+    background: #fff;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.menu-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 80px;
+}
+
+.tab-btn {
+    /* padding: 18px 32px; */
+    width: 188px;
+    height: 56px;
+
+    border: none;
+    border-radius: 30px;
+    background: #f8eadd;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.tab-btn:hover {
+    background: #C10230;
+    color: #fff;
+}
+
+.tab-btn.active {
+    background: #C10230;
+    color: #fff;
+}
+
+.menu-swiper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    padding-top: 12px;
+}
+
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-card img {
+    display: block;
+    width: 290px;
+    height: 290px;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+
+    transition: 0.3s;
+}
+
+.menu-card:hover img {
+    transform: translateY(-8px);
+}
+
+.menu-card .title {
+    width: 260px;
+}
+
+.menu-card h3 {
+    margin-top: 20px;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.menu-card p {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+}
+
+
+
+/* store */
+.store-section {
+    padding: 140px 0;
+}
+
+.store-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+}
+
+.store-card {
+    display: flex;
+    align-items: stretch;
+}
+
+.store-info {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 65%;
+    max-width: 320px;
+    padding: 40px;
+
+    background: #fff;
+    border-radius: 28px;
+    box-shadow: 3px 3px 20px 0px rgba(0, 0, 0, 0.10);
+
+    transition: 0.4s;
+}
+
+.store-info:hover {
+    transform: translateY(-8px);
+}
+
+.store-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 155px;
+    height: 155px;
+    margin-bottom: 24px;
+
+    border: 1px solid #e8c38f;
+    border-radius: 50%;
+}
+
+.store-icon img {
+    width: 100px;
+}
+
+.store-info h2 {
+    width: 230px;
+    margin-bottom: 16px;
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.store-info p {
+    width: 240px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+
+    margin-bottom: 24px;
+}
+
+.more-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: auto;
+
+    width: 2.5rem;
+    height: 2.5rem;
+
+    border-radius: 50%;
+    background: #c8102e;
+}
+
+.store-img {
+    overflow: hidden;
+
+    width: 60%;
+    margin-left: -60px;
+
+
+    border-radius: 28px;
+
+    transform: translateY(20px);
+}
+
+.store-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* tea */
+.tea-section {
+    padding: 140px 0;
+    background: #fff;
+    border-radius: 2rem 2rem;
+}
+
+.recipe-wrap {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+.recipe-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    width: 40%;
+}
+
+.recipe-label {
+    margin-bottom: 28px;
+
+    font-size: 24px;
+    font-weight: normal;
+    color: #444;
+}
+
+.recipe-text h2 {
+    margin-bottom: 4px;
+
+    font-family: 'Pretendard', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.1;
+
+    color: #c8102e;
+}
+
+.recipe-text h3 {
+    margin-bottom: 36px;
+
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.recipe-desc {
+    max-width: 540px;
+
+    font-size: 20px;
+    line-height: 1.8;
+    color: #666;
+    letter-spacing: -0.02em;
+    word-break: keep-all;
+}
+
+.recipe-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    margin-top: 70px;
+}
+
+.recipe-pagination {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+
+    background: #ccc;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #c8102e;
+}
+
+.detail-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+
+    padding: 12px 18px 12px 24px;
+
+    border-radius: 30px;
+    background: #c8102e;
+
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.detail-btn span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 26px;
+    height: 26px;
+
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.recipe-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60%;
+    min-width: 0;
+
+    border: 1px solid #ECD1A3;
+    border-radius: 1.875rem;
+    padding: 30px 50px 50px;
+}
+
+.recipe-img img {
+    display: block;
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+/* new store */
+.new-store-section {
+    padding: 140px 0;
+}
+
+.new-store-title {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.new-store-title h2 {
+    margin-bottom: 12px;
+
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.new-store-title p {
+    font-size: 18px;
+    color: #666;
+}
+
+.new-store-swiper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    padding-bottom: 70px;
+}
+
+.new-store-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.new-store-card img {
+   display: block;
+
+    width: 100%;
+    max-width: 404px;
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+    border-radius: 18px;
+
+    transition: 0.6s;
+}
+
+.new-store-card h3 {
+    margin-top: 16px;
+    padding: 14px 36px;
+
+    background: #f6ead7;
+    border-radius: 20px;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.new-store-swiper .swiper-slide {
+    transform: scale(0.7);
+    transition: 0.4s;
+}
+
+.new-store-swiper .swiper-slide-active {
+    transform: scale(1);
+}
+
+.new-store-swiper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+.new-store-swiper .swiper-pagination {
+    position: absolute;
+
+    left: 50%;
+    bottom: 20px;
+    top: auto;
+
+    transform: translateX(-50%);
+
+    width: calc(100% - 40px);
+    max-width: 1440px;
+    height: 4px;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    background: none;
+}
+
+.new-store-swiper .swiper-pagination-progressbar-fill {
+    background: #C10230;
+    border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+
+    /* hero */
+    .hero {
+        height: 80vh;
+    }
+
+    /* menu */
+    .menu-section {
+        padding: 100px 0;
+    }
+
+    .menu-tabs {
+        margin-bottom: 60px;
+    }
+
+    .tab-btn {
+        width: 160px;
+        height: 52px;
+        font-size: 18px;
+    }
+
+
+    /* store */
+    .store-section {
+        padding: 100px 0;
+    }
+
+    .store-wrap {
+        grid-template-columns: 1fr;
+        gap: 70px;
+    }
+
+    .store-card {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .store-info h2,
+    .store-info p {
+        max-width: 100%;
+    }
+
+    /* tea */
+    .tea-section {
+        padding: 100px 0;
+    }
+
+    .recipe-wrap {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        gap: 40px;
+    }
+
+    .recipe-text {
+        width: 100%;
+    }
+
+    .recipe-img {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .recipe-label {
+        font-size: 20px;
+    }
+
+    .recipe-text h2 {
+        font-size: 48px;
+    }
+
+    .recipe-text h3 {
+        font-size: 25px;
+    }
+
+    .recipe-desc {
+        font-size: 17px;
+    }
+
+    .recipe-bottom {
+        margin-top: 50px;
+    }
+
+    /* new-store */
+    .new-store-section {
+        padding: 80px 0;
+    }
+
+    .new-store-title {
+        margin-bottom: 40px;
+    }
+
+    .new-store-title h2 {
+        font-size: 28px;
+    }
+
+    .new-store-title p {
+        font-size: 15px;
+    }
+
+    .new-store-card img {
+        border-radius: 16px;
+    }
+
+    .new-store-card h3 {
+        margin-top: 12px;
+        padding: 10px 24px;
+
+        font-size: 15px;
+    }
+
+    .new-store-swiper .swiper-slide {
+        transform: scale(0.85);
+    }
+
+    .new-store-swiper .swiper-slide-active {
+        transform: scale(1);
+    }
+
+    .new-store-swiper {
+        padding-bottom: 65px;
+    }
+
+    .new-store-swiper .swiper-pagination {
+        bottom: 15px;
+
+        width: calc(100% - 40px);
+        height: 4px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 60px;
+        height: 60px;
+    }
+
+    .swiper-button-prev {
+        left: 80px;
+    }
+
+    .swiper-button-next {
+        right: 80px;
+    }
+}
+
+@media (max-width: 393px) {
+
+    /* hero */
+    .hero {
+        height: 70vh;
+    }
+
+    /* menu */
+    .menu-section {
+        padding: 80px 0;
+    }
+
+    .menu-tabs {
+        gap: 12px;
+        margin-bottom: 50px;
+    }
+
+    .tab-btn {
+        width: 140px;
+        height: 48px;
+
+        font-size: 16px;
+    }
+
+    .menu-card h3 {
+        margin-top: 14px;
+        font-size: 16px;
+    }
+
+    /* store */
+    .store-section {
+        padding: 80px 0;
+    }
+
+    .store-wrap {
+        gap: 60px;
+    }
+
+    .store-card {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .store-icon {
+        width: 90px;
+        height: 90px;
+
+        margin-bottom: 20px;
+    }
+
+    .store-icon img {
+        width: 55px;
+    }
+
+    .store-info {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .store-info h2,
+    .store-info p {
+        width: 100%;
+    }
+
+    .store-info h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .store-info p {
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+
+    .store-img {
+        width: calc(100% - 40px);
+
+        margin-left: 40px;
+        margin-top: -140px;
+
+        transform: none;
+
+        border-radius: 24px;
+    }
+
+    .store-img img {
+        min-height: 260px;
+    }
+
+    .more-btn {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+
+        margin-top: 0;
+    }
+
+    /* tea */
+    .tea-section {
+        padding: 100px 0 80px;
+    }
+
+    .recipe-wrap {
+        gap: 50px;
+    }
+
+    .recipe-text {
+        width: 100%;
+    }
+
+    .recipe-label {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .recipe-text h2 {
+        font-size: 30px;
+    }
+
+    .recipe-text h3 {
+        margin-bottom: 24px;
+        font-size: 20px;
+    }
+
+    .recipe-desc {
+        max-width: none;
+        font-size: 16px;
+    }
+
+    .recipe-bottom {
+        margin-top: 40px;
+    }
+
+    .recipe-img {
+        width: 100%;
+        padding: 25px;
+
+        border-radius: 24px;
+    }
+
+    .recipe-img img {
+        max-height: 300px;
+    }
+
+    /* new-store */
+    .new-store-section {
+        padding: 70px 0;
+    }
+
+    .new-store-title {
+        margin-bottom: 30px;
+    }
+
+    .new-store-title h2 {
+        font-size: 24px;
+    }
+
+    .new-store-title p {
+        font-size: 14px;
+    }
+
+    .new-store-card h3 {
+        padding: 9px 20px;
+
+        font-size: 14px;
+    }
+
+    .new-store-swiper .swiper-slide {
+        transform: scale(0.9);
+    }
+
+    .new-store-swiper .swiper-slide-active {
+        transform: scale(1);
+    }
+
+    .new-store-swiper {
+        padding-bottom: 60px;
+    }
+
+    .new-store-swiper .swiper-pagination {
+        bottom: 12px;
+
+        width: calc(100% - 40px);
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+}
